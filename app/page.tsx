@@ -2,6 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import Hero from '@/components/core/Hero';
 
+
 const Home = () => {
   return (
 
@@ -10,6 +11,7 @@ const Home = () => {
       <div className='w-full'>
 
         <Hero />
+
 
 
 
