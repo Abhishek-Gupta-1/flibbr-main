@@ -6,7 +6,6 @@ import { Points, PointMaterial, Preload } from "@react-three/drei";
 // @ts-ignore
 import * as random from "maath/random/dist/maath-random.esm";
 
-
 const StarBackground = (props: any) => {
     const ref = useRef<any>();
     const [sphere] = useState(() =>
@@ -36,9 +35,7 @@ const StarBackground = (props: any) => {
 };
 
 const StarsCanvas = () => (
-    <div
-        className="w-full h-auto fixed inset-0 z-[0] pointer-events-none"
-    >
+    <div className="w-full h-auto fixed inset-0 z-0 pointer-events-none">
         <Canvas camera={{ position: [0, 0, 1] }}>
             <Suspense fallback={null}>
                 <StarBackground />
@@ -48,8 +45,3 @@ const StarsCanvas = () => (
 );
 
 export default StarsCanvas;
-
-
-
-
-
