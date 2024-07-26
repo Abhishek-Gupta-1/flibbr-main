@@ -4,21 +4,21 @@ import Image from 'next/image'
 import { Icons } from '@/data/Cdn'
 import Particles from '@/components/ui/Particles'
 
-const Hero = () => {
+const Hero: React.FC = () => {
     const [user, setUser] = useState({ Email: '' })
 
-    const data = (e) => {
+    const data = (e: React.ChangeEvent<HTMLInputElement>) => {
         const { name, value } = e.target;
         setUser({ ...user, [name]: value })
     }
 
-    const getdata = async (e) => {
+    const getdata = async (e: React.FormEvent<HTMLButtonElement>) => {
         e.preventDefault();
         const { Email } = user;
 
         const options = {
             method: 'POST',
-            headers: { // Corrected 'header' to 'headers'
+            headers: {
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify({ Email })
@@ -26,9 +26,9 @@ const Hero = () => {
 
         const res = await fetch('https://flibbr-subscription-email-default-rtdb.firebaseio.com/UserData.json', options)
 
-        if (res.ok) {
-            alert("You will be notified")
-            setUser({ Email: ' ' })
+        if (res.ok) { // Corrected response check
+            alert("You will be notified as we get live.")
+            setUser({ Email: '' })
         } else {
             alert("Error Occurred")
         }
