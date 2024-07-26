@@ -25,7 +25,7 @@ const StarBackground = (props: any) => {
                 <PointMaterial
                     transparent
                     color="#808080"
-                    size={0.004}
+                    size={0.003}
                     sizeAttenuation
                     depthWrite={false}
                 />

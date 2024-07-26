@@ -8,14 +8,12 @@ import Particles from '@/components/ui/Particles'
 const Home = () => {
   return (
 
-    <main className="flex h-screen max-w-screen max-h-screen w-full flex-col">
-      <div>
-        <div className='w-full max-h-screen'>
-          {/* <Navbar /> */}
-          <Hero />
+    <main className="flex h-screen max-w-screen max-h-screen flex-col w-full">
 
-        </div>
-      </div>
+      {/* <Navbar /> */}
+      <Hero />
+
+
       <div>
         {/* <Particles /> */}
       </div>
