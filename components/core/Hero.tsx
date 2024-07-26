@@ -5,8 +5,8 @@ import { ModeToggle } from '../ui/ModeToggle'
 
 
 
-const Hero = () => {
 
+const Hero = () => {
 
     return (
         <>
@@ -49,9 +49,9 @@ const Hero = () => {
                             <input
                                 type="email"
                                 placeholder="Enter your email to get notified"
-                                className="w-72 px-4 py-2 rounded text-gray-700 bg-white dark:text-gray-200 dark:bg-black border border-transparent focus:border-white  focus:ring-2 ring-black dark:ring-white dark:border-white border-black"
+                                className="w-72 px-4 py-2 rounded text-gray-700 bg-white dark:text-gray-200 dark:bg-black border  dark:focus:border-white focus:border-black focus:ring-2 ring-black dark:ring-white dark:border-white border-black"
                             />
-                            <button className="px-4 py-2 bg-white text-black rounded">Get Notified</button>
+                            <button className="px-4 py-2 bg-white text-black rounded border border-black  ">Get Notified</button>
                         </div>
 
 
