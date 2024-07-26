@@ -8,11 +8,7 @@ const Home = () => {
   return (
 
     <main className="flex h-screen max-w-screen max-h-screen flex-col w-full">
-
-      {/* <Navbar /> */}
       <Hero />
-
-
       <div>
         {/* <Particles /> */}
       </div>
