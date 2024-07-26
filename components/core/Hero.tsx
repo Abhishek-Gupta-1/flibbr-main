@@ -2,6 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import Particles from '../ui/Particles'
 import { ModeToggle } from '../ui/ModeToggle'
+import { Icons } from '@/data/Cdn'
 
 
 
@@ -26,13 +27,13 @@ const Hero = () => {
 
                     <div className="absolute left-0 top-20 lg:grid grid-rows-3 gap-8 hidden">
                         <div className=" pt-4">
-                            <Image src="/icons/Frame1.svg" alt="Icon 1" width={55} height={55} className="h-24 w-24" />
+                            <Image src={Icons.icon1} alt="Icon 1" width={55} height={55} className="h-24 w-24" />
                         </div>
                         <div className="pl-20 pt-8">
-                            <Image src="/icons/Frame2.svg" alt="Icon 2" width={55} height={55} className="h-24 w-24" />
+                            <Image src={Icons.icon2} alt="Icon 2" width={55} height={55} className="h-24 w-24" />
                         </div>
                         <div className="pl-52 pt-12">
-                            <Image src="/icons/Frame3.svg" alt="Icon 3" width={55} height={55} className="h-24 w-24" />
+                            <Image src={Icons.icon3} alt="Icon 3" width={55} height={55} className="h-24 w-24" />
                         </div>
                     </div>
 
@@ -41,7 +42,7 @@ const Hero = () => {
                         <h2 className="lg:text-6xl font-medium mb-4 z-10 text-3xl ">
                             Revolutionizing travel with <span className="lg:block">AI and personalized experiences</span>
                         </h2>
-                        <p className="mb-8 z-10 text-gray-600 dark:text-gray-300 font-semibold lg:inline hidden">
+                        <p className="mb-8 z-10 text-gray-600 dark:text-gray-300 font-normal lg:text-xl text-sm ">
                             Our innovative <span className='text-black dark:text-white'>AI and personalized approach</span> redefines how you explore the world,
                             <span className="block">so you can focus on creating unforgettable memories.</span>
                         </p>
@@ -59,13 +60,13 @@ const Hero = () => {
 
                     <div className="absolute right-0 top-20 lg:grid grid-rows-3 gap-8 hidden">
                         <div className="ml-24 pr-0 pt-4">
-                            <Image src="/icons/Frame1.svg" alt="Icon 1" width={55} height={55} className="h-24 w-24" />
+                            <Image src={Icons.icon4} alt="Icon 1" width={55} height={55} className="h-24 w-24" />
                         </div>
                         <div className="ml-12 pr-12 pt-8">
-                            <Image src="/icons/Frame2.svg" alt="Icon 2" width={55} height={55} className="h-24 w-24" />
+                            <Image src={Icons.icon4} alt="Icon 2" width={55} height={55} className="h-24 w-24" />
                         </div>
                         <div className="-translate-x-12 pt-12">
-                            <Image src="/icons/Frame3.svg" alt="Icon 3" width={55} height={55} className="h-24 w-24" />
+                            <Image src={Icons.icon5} alt="Icon 3" width={55} height={55} className="h-24 w-24" />
                         </div>
                     </div>
 
