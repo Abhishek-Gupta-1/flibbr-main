@@ -1,7 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
 import Hero from '@/components/core/Hero';
-import Navbar from '@/components/core/Navbar';
 import Particles from '@/components/ui/Particles'
 
 
