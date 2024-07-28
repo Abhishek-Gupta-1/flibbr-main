@@ -7,12 +7,11 @@ import Particles from '@/components/ui/Particles'
 const Home = () => {
   return (
 
-    <main className="flex h-screen max-w-screen max-h-screen flex-col w-full">
-      <Hero />
-      <div>
-        {/* <Particles /> */}
-      </div>
+    <main className="flex max-h-screen w-screen flex-col ">
+      <div className='lg:h-screen h-[94vh]'>
 
+        <Hero />
+      </div>
     </main>
 
 

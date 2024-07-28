@@ -36,7 +36,7 @@ const Hero: React.FC = () => {
 
     return (
         <>
-            <div className="min-h-screen flex flex-col items-center justify-center bg-black text-white ">
+            <div className=" h-full  w-full flex flex-col items-center justify-center bg-black text-white ">
                 <Particles />
 
                 <nav className="w-full pt-6">
@@ -59,7 +59,7 @@ const Hero: React.FC = () => {
                         </div>
                     </div>
 
-                    <div className='lg:mx-52 mx-32 px-4'>
+                    <div className='lg:mx-52 md:mx-28 px-4'>
                         <h2 className="lg:text-6xl md:text-5xl font-medium mb-4 z-10 text-3xl ">
                             AI-Powered Journeys. <span className='block'>Limitless Possibilities</span>
                         </h2>
@@ -92,7 +92,7 @@ const Hero: React.FC = () => {
                         </div>
                     </div>
                 </main>
-                <footer className="py-4">
+                <footer className="absolute bottom-10">
                     <p>Mapping Wonders. Coming Soon!</p>
                 </footer>
             </div>
