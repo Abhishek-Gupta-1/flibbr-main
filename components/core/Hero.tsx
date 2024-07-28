@@ -8,15 +8,28 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const Hero: React.FC = () => {
     const [user, setUser] = useState({ Email: '' })
+    const [error, setError] = useState('')
 
     const data = (e: React.ChangeEvent<HTMLInputElement>) => {
         const { name, value } = e.target;
         setUser({ ...user, [name]: value })
     }
 
+    const validateEmail = (email: string) => {
+        const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return regex.test(email);
+    }
+
     const getdata = async (e: React.FormEvent<HTMLButtonElement>) => {
         e.preventDefault();
         const { Email } = user;
+
+        if (!validateEmail(Email)) {
+            setError('Please enter a valid email address.');
+            return;
+        }
+
+        setError('');
 
         const options = {
             method: 'POST',
@@ -28,7 +41,7 @@ const Hero: React.FC = () => {
 
         const res = await fetch('https://flibbr-subscription-email-default-rtdb.firebaseio.com/UserData.json', options)
 
-        if (res.ok) { // Corrected response check
+        if (res.ok) {
             toast.success('You will be notified as we get live.', {
                 position: "top-center",
                 autoClose: 5000,
@@ -41,7 +54,16 @@ const Hero: React.FC = () => {
             });
             setUser({ Email: '' })
         } else {
-            alert("Error Occurred")
+            toast.error('Error Occurred!', {
+                position: "top-center",
+                autoClose: 3000,
+                hideProgressBar: true,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: false,
+                progress: 0,
+                theme: "dark",
+            });
         }
     }
 
@@ -88,6 +110,8 @@ const Hero: React.FC = () => {
                                 className="w-72 px-4 py-2 rounded-lg text-gray-200 bg-black border focus:border-white focus:ring-2 ring-white border-gray-600"
                             />
                             <button onClick={getdata} className="m-4 px-4 py-2 bg-white text-black rounded-lg border">Get Notified</button>
+
+                            {error && <p className="text-red-500">{error}</p>}
 
                             <ToastContainer
                                 position="top-center"
