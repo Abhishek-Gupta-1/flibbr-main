@@ -82,13 +82,13 @@ const Hero: React.FC = () => {
 
                     <div className="absolute left-0 top-20 hidden lg:grid md:grid grid-rows-3 lg:gap-8 gap-0 ">
                         <div className=" pt-4">
-                            <Image src={Icons.icon1} alt="Icon 1" width={55} height={55} className="lg:h-24 lg:w-24 h-16 w-16" />
+                            <Image src="/icons/Frame1.svg" alt="Icon 1" width={55} height={55} className="lg:h-24 lg:w-24 h-16 w-16" />
                         </div>
                         <div className="lg:pl-20 pl-6 lg:pt-8 pt-6">
-                            <Image src={Icons.icon2} alt="Icon 2" width={55} height={55} className="lg:h-24 lg:w-24 h-16 w-16" />
+                            <Image src="/icons/Frame2.svg" alt="Icon 2" width={55} height={55} className="lg:h-24 lg:w-24 h-16 w-16" />
                         </div>
                         <div className="lg:pl-52 pl-12 lg:pt-12 pt-8">
-                            <Image src={Icons.icon3} alt="Icon 3" width={55} height={55} className="lg:h-24 lg:w-24 h-16 w-16" />
+                            <Image src="/icons/Frame3.svg" alt="Icon 3" width={55} height={55} className="lg:h-24 lg:w-24 h-16 w-16" />
                         </div>
                     </div>
 
@@ -131,13 +131,13 @@ const Hero: React.FC = () => {
 
                     <div className="absolute right-0 top-20 hidden lg:grid md:grid grid-rows-3 lg:gap-8 gap-0">
                         <div className="ml-24 pr-0 pt-4">
-                            <Image src={Icons.icon4} alt="Icon 1" width={55} height={55} className="lg:h-24 lg:w-24 h-16 w-16" />
+                            <Image src="/icons/Frame4.svg" alt="Icon 1" width={55} height={55} className="lg:h-24 lg:w-24 h-16 w-16" />
                         </div>
                         <div className="lg:ml-12 ml-16 lg:pt-8 pt-6">
-                            <Image src={Icons.icon5} alt="Icon 2" width={55} height={55} className="lg:h-24 lg:w-24 h-16 w-16" />
+                            <Image src="/icons/Frame5.svg" alt="Icon 2" width={55} height={55} className="lg:h-24 lg:w-24 h-16 w-16" />
                         </div>
                         <div className="lg:-translate-x-12 lg:ml-0 ml-7 lg:pt-12 pt-8">
-                            <Image src={Icons.icon6} alt="Icon 3" width={55} height={55} className="lg:h-24 lg:w-24 h-16 w-16" />
+                            <Image src="/icons/Frame6.svg" alt="Icon 3" width={55} height={55} className="lg:h-24 lg:w-24 h-16 w-16" />
                         </div>
                     </div>
                 </main>
