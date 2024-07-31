@@ -84,16 +84,16 @@ const Hero: React.FC = () => {
                         <div className=" pt-4">
                             <Image src="/icons/Frame1.svg" alt="Icon 1" width={55} height={55} className="lg:h-24 lg:w-24 h-16 w-16" />
                         </div>
-                        <div className="lg:pl-20 pl-6 lg:pt-8 pt-6">
+                        <div className="lg:pl-14 pl-6 lg:pt-8 pt-6">
                             <Image src="/icons/Frame2.svg" alt="Icon 2" width={55} height={55} className="lg:h-24 lg:w-24 h-16 w-16" />
                         </div>
-                        <div className="lg:pl-52 pl-12 lg:pt-12 pt-8">
+                        <div className="lg:pl-36 pl-12 lg:pt-12 pt-8">
                             <Image src="/icons/Frame3.svg" alt="Icon 3" width={55} height={55} className="lg:h-24 lg:w-24 h-16 w-16" />
                         </div>
                     </div>
 
                     <div className='lg:mx-52 md:mx-28 px-4'>
-                        <h2 className="lg:text-6xl md:text-5xl font-medium mb-4 z-10 text-3xl ">
+                        <h2 className="lg:text-6xl md:text-5xl font-medium mb-4 z-10 text-3xl text-gray-100 ">
                             AI-Powered Journeys. <span className='block'>Limitless Possibilities</span>
                         </h2>
                         <p className="mb-8 z-10 text-gray-400 font-normal lg:text-xl md:text-lg text-sm ">

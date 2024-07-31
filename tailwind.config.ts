@@ -17,7 +17,24 @@ const config = {
         "2xl": "1400px",
       },
     },
+    
     extend: {
+      minHeight: {
+        'screen-sm': '640px',
+        'screen-md': '768px',
+        'screen-lg': '1024px',
+        'screen-xl': '1280px',
+        'screen-2xl': '1536px',
+      },
+      // Define custom screen sizes with min-height
+      screens: {
+        'sm': {'min': '640px'},
+        'md': {'min': '768px'},
+        'lg': {'min': '1024px'},
+        'xl': {'min': '1280px'},
+        '2xl': {'min': '1536px'},
+      },
+
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
